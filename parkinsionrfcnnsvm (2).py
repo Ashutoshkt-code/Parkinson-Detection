@@ -92,7 +92,7 @@ y_pred = ensemble_model.predict(x_test)
 # Calculate metrics
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("Mean Absolute Error:", mean_absolute_error(y_test, y_pred))
-print("Root Mean Squared Error:", np.sqrt(mean_squared_error(y_test, y_pred)))
+print("Root Mean squared Error:", np.sqrt(mean_squared_error(y_test, y_pred)))
 
 for i in range(3):
     in_data = np.asarray(tuple(map(float, input("Enter the data:").rstrip().split(','))))  # Ensure there are 22 features
